@@ -248,7 +248,80 @@ main .side-content .box:last-of-type{
     margin-top: 8px;
 }
 
+/* thesis section */
+.thesis{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+.thesis h2{
+    align-self: center;
+    margin: 2rem 0 1rem;
+}
+
+.thesis .content{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.thesis .content .thesis-video{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-right: 1rem;
+}
+
+.thesis .content .thesis-video .video-container{
+    width: 100%;
+}
+
+.thesis .content .thesis-video .video-container video{
+    width: 100%;
+    height: auto;
+}
+
+.thesis .content .thesis-video h3{
+    margin: 24px 0;
+}
+
+.thesis .content .thesis-side{
+    width: 40%;
+}
+
+.thesis .content .thesis-side .box{
+    width: 100%;
+    display: flex;
+    padding: 1rem;
+    border: #b8b8b8 1px solid;
+}
+
+.thesis .content .thesis-side .box:first-child{
+    background-color: lightgray;
+    margin-bottom: 1rem;
+}
+
+
+.thesis .content .thesis-side .box .img-container{
+    width: 40%;
+    margin-right: .8rem;
+}
+
+.thesis .content .thesis-side .box .img-container img{
+    width: 100%;
+    height: auto;
+}
+
+.thesis .content .thesis-side .box .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.thesis .content .thesis-side .box .text h4{
+    margin-bottom: 16px;
+}
 /* mEDIA Queries */
 @media only screen and (max-width: 850px){
     nav{
@@ -263,6 +336,21 @@ main .side-content .box:last-of-type{
     /* courses */
     .courses .content{
         width: 100%;
+    }
+
+    /* these */
+    .thesis .content .thesis-side .box{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .thesis .content .thesis-side .box .img-container{
+        width: 50%;
+    }
+
+    .thesis .content .thesis-side .box .text h4{
+        margin: .5rem 0;
     }
 }
 
@@ -360,6 +448,7 @@ main .side-content .box:last-of-type{
         margin-bottom: .5rem;
     }
 
+
     /* courses */
     .courses h2{
         margin: 16px 0;
@@ -379,6 +468,31 @@ main .side-content .box:last-of-type{
         background-color: rgb(164, 191, 218);
         border-radius: 5px;
         margin-bottom: 1rem;
+    }
+
+    /* thesis */
+    .thesis{
+        padding-bottom: 1rem;
+    }
+    .thesis h2{
+        margin: 1rem 0;
+    }
+
+    .thesis .content{
+        padding: 0;
+    }
+
+    .thesis .content .thesis-video{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .thesis .content .thesis-video .text{
+        display: none;
+    }
+
+    .thesis .content .thesis-side{
+        display: none;
     }
 
 }
