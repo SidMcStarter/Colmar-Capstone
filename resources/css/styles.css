@@ -15,6 +15,7 @@ nav.mobile{
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 .light{
@@ -322,6 +323,25 @@ main .side-content .box:last-of-type{
 .thesis .content .thesis-side .box .text h4{
     margin-bottom: 16px;
 }
+
+/* footer */
+footer{
+    margin-top: .5rem;
+    border-top: #b8b8b8 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+footer ul{
+    display: flex;
+}
+
+footer li:first-child{
+    margin-right: 1rem;
+}
+
 /* mEDIA Queries */
 @media only screen and (max-width: 850px){
     nav{
@@ -492,6 +512,14 @@ main .side-content .box:last-of-type{
     }
 
     .thesis .content .thesis-side{
+        display: none;
+    }
+
+    /* footer */
+    footer{
+        justify-content: center;
+    }
+    footer ul{
         display: none;
     }
 
