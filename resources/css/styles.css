@@ -1,13 +1,35 @@
+/* poppins for nav and footer, gulzar for h1, ubuntu for p, montserrat for h4 */
+@import url('https://fonts.googleapis.com/css2?family=Gulzar&family=Montserrat:wght@400;500&family=Poppins:wght@300&family=Roboto:wght@500&family=Ubuntu:wght@300;400&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    line-height: 1.1;
+
 }
 
 li{
     list-style: none;
 }
 
+h1{
+    font-family: "Gulzar", serif;
+}
+
+p{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+}
+
+h3, h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+}
 /* nav part */
 nav.mobile{
     display: none;
@@ -57,15 +79,16 @@ nav ul li:not(:last-child){
 }
 
 nav ul li a{
-    font-size: 20px;
+    font-size: 16px;
     color: black;
     padding: 1rem;
     transition: color .250s ease-in, background-color .250s ease-in;
+    font-family: "Poppins";
 }
 
 nav ul li a:hover{
     background-color: rgb(84, 83, 83);
-    color: #d7dae5;
+    color: white
 }
 
 /* header section */
@@ -101,9 +124,10 @@ nav ul li a:hover{
 .header-content .text .btn{
     color: white;
     background-color: #2C3639;
-    border-radius: 10%;
-    padding: 1em 3em;
+    border-radius: 10px;
+    padding: 1em 2.5em;
     font-size: 1.1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .header-content .img-container{
@@ -138,6 +162,7 @@ main .info-content h1{
 
 main .info-content p:first-of-type{
     margin-bottom: 24px;
+    line-height: 1.2;
 }
 
 main .info-content .img-container{
@@ -332,6 +357,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    font-family: "Poppins", sans-serif;
 }
 
 footer ul{
@@ -426,6 +452,10 @@ footer li:first-child{
         width: 100%;
     }
 
+    .header-content .text h1{
+        margin-bottom: 0;
+    }
+
     /* side content */
     main{
         display: block;
@@ -488,6 +518,7 @@ footer li:first-child{
         background-color: rgb(164, 191, 218);
         border-radius: 5px;
         margin-bottom: 1rem;
+        font-family: 'Montserrat', sans-serif;
     }
 
     /* thesis */
